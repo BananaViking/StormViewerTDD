@@ -32,5 +32,17 @@ class StormviewerTDDTests: XCTestCase {
         // then
         XCTAssertNotNil(sut.tableView)
     }
+    
+    func testTableViewHasCorrectRowCount() {
+        // given
+        let sut = ViewController()
+        
+        // when
+        sut.loadViewIfNeeded()
+        
+        // then
+        let rowCount = sut.tableView(sut.tableView, numberOfRowsInSection: 0)
+        XCTAssertEqual(rowCount, sut.pictures.count)
+    }
 
 }
