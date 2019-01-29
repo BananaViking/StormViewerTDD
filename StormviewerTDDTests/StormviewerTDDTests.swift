@@ -76,5 +76,18 @@ class StormviewerTDDTests: XCTestCase {
             XCTAssertEqual(cell.accessoryType, .disclosureIndicator)
         }
     }
+    
+    func testViewControllerUsesLargeTitles() {
+        // given
+        let sut = ViewController()
+        // need this because XCTest can't see the nav contr in storyboard
+        _ = UINavigationController(rootViewController: sut)
+        
+        // when
+        sut.loadViewIfNeeded()
+        
+        // then
+        XCTAssertTrue(sut.navigationController?.navigationBar.prefersLargeTitles ?? false)
+    }
 
 }

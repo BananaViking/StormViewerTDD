@@ -25,6 +25,8 @@ class ViewController: UITableViewController {
         }
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
