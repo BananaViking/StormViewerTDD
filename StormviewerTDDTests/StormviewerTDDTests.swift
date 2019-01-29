@@ -21,5 +21,16 @@ class StormviewerTDDTests: XCTestCase {
         // then
         XCTAssertEqual(sut.pictures.count, 10, "There should be 10 pictures.")
     }
+    
+    func testTableExists() {
+        // given
+        let sut = ViewController()
+        
+        // when
+        sut.loadViewIfNeeded()
+        
+        // then
+        XCTAssertNotNil(sut.tableView)
+    }
 
 }
