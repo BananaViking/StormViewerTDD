@@ -27,6 +27,7 @@ class ViewController: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
         navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Storm Viewer"
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

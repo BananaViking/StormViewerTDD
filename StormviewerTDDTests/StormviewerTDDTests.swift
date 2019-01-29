@@ -89,5 +89,16 @@ class StormviewerTDDTests: XCTestCase {
         // then
         XCTAssertTrue(sut.navigationController?.navigationBar.prefersLargeTitles ?? false)
     }
+    
+    func testNavigationBarHasStormViewerTitle() {
+        // given
+        let sut = ViewController()
+        
+        // when
+        sut.loadViewIfNeeded()
+        
+        // then
+        XCTAssertEqual(sut.title, "Storm Viewer")
+    }
 
 }
