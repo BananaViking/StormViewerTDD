@@ -44,5 +44,21 @@ class StormviewerTDDTests: XCTestCase {
         let rowCount = sut.tableView(sut.tableView, numberOfRowsInSection: 0)
         XCTAssertEqual(rowCount, sut.pictures.count)
     }
+    
+    func testEachCellHasTheCorrectText() {
+        // given
+        let sut = ViewController()
+        
+        // when
+        sut.loadViewIfNeeded()
+        
+        // then
+        for (index, picture) in sut.pictures.enumerated() {
+            let indexPath = IndexPath(item: index, section: 0)
+            let cell = sut.tableView(sut.tableView, cellForRowAt: indexPath)
+            
+            XCTAssertEqual(cell.textLabel?.text, picture)
+        }
+    }
 
 }
