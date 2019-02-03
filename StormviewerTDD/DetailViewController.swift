@@ -17,4 +17,10 @@ class DetailViewController: UIViewController {
 
     }
     
+    override func loadView() {
+        imageView.backgroundColor = .white
+        imageView.contentMode = .scaleAspectFill
+        view = imageView
+    }
+    
 }
