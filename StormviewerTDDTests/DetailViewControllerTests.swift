@@ -14,6 +14,12 @@ class DetailViewControllerTests: XCTestCase {
     func testDetailImageViewExists() {
         // given
         let sut = DetailViewController()
+        
+        // when
+        sut.loadViewIfNeeded()
+        
+        // then
+        XCTAssertNotNil(sut.imageView)
     }
 
 }
