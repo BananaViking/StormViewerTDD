@@ -69,5 +69,26 @@ class DetailViewControllerTests: XCTestCase {
         // then
         XCTAssertEqual(sut.imageView.image, imageToLoad)
     }
+    
+    func testSelectingImageShowsDetail() {
+        // given
+        let sut = ViewController()
+        let navigationController = UINavigationController(rootViewController: sut)
+        let testIndexPath = IndexPath(row: 0, section: 0)
+        
+        // when
+        sut.tableView(sut.tableView, didSelectRowAt: testIndexPath)
+        
+        let expectation = XCTestExpectation(description: "Selecting a table view cell.")
+        
+        // fulfill the expectation asynchronously
+        DispatchQueue.main.async {
+            expectation.fulfill()
+        }
+        
+        // then
+        wait(for: [expectation], timeout: 1)
+        XCTAssertTrue(navigationController.topViewController is DetailViewController)
+    }
 
 }
