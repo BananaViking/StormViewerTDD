@@ -54,5 +54,20 @@ class DetailViewControllerTests: XCTestCase {
         // then
         XCTAssertEqual(sut.imageView.contentMode, .scaleAspectFill)
     }
+    
+    func testDetailLoadsImage() {
+        // given
+        let filenameToTest = "nss10049.jpg"
+        let imageToLoad = UIImage(named: filenameToTest, in: Bundle.main, compatibleWith: nil)
+        
+        let sut = DetailViewController()
+        sut.selectedImage = filenameToTest
+        
+        // when
+        sut.loadViewIfNeeded()
+        
+        // then
+        XCTAssertEqual(sut.imageView.image, imageToLoad)
+    }
 
 }
