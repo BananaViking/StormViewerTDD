@@ -100,5 +100,4 @@ class StormviewerTDDTests: XCTestCase {
         // then
         XCTAssertEqual(sut.title, "Storm Viewer")
     }
-
 }
