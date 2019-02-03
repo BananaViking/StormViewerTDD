@@ -11,6 +11,9 @@ import XCTest
 
 class DetailViewControllerTests: XCTestCase {
 
-    
+    func testDetailImageViewExists() {
+        // given
+        let sut = DetailViewController()
+    }
 
 }
