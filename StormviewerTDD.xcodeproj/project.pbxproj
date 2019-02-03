@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		057E186B22075289003BD1FA /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057E186A22075289003BD1FA /* MainCoordinator.swift */; };
 		05B8733F22073E4E005DE499 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8733E22073E4E005DE499 /* DetailViewControllerTests.swift */; };
 		05B8734122073F4B005DE499 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B8734022073F4B005DE499 /* DetailViewController.swift */; };
 		05FC2A752200B3E200F8A3BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FC2A742200B3E200F8A3BB /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		057E186A22075289003BD1FA /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		05B8733E22073E4E005DE499 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
 		05B8734022073F4B005DE499 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		05FC2A712200B3E200F8A3BB /* StormviewerTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormviewerTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				05FC2A942200B43800F8A3BB /* Content */,
 				05FC2A7D2200B3E300F8A3BB /* LaunchScreen.storyboard */,
 				05FC2A802200B3E300F8A3BB /* Info.plist */,
+				057E186A22075289003BD1FA /* MainCoordinator.swift */,
 			);
 			path = StormviewerTDD;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B8734122073F4B005DE499 /* DetailViewController.swift in Sources */,
+				057E186B22075289003BD1FA /* MainCoordinator.swift in Sources */,
 				05FC2A772200B3E200F8A3BB /* ViewController.swift in Sources */,
 				05FC2A752200B3E200F8A3BB /* AppDelegate.swift in Sources */,
 			);
